@@ -12,7 +12,7 @@ import UIKit
 class SnekCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var infoTextView: UITextView!
+    @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var imageUIImage: UIImageView!
     
     static var id: String {
@@ -25,7 +25,7 @@ class SnekCell: UITableViewCell {
     
     func configureCell(snek: Snek) {
         titleLabel.text = snek.title
-//        infoTextView.text = snek.info
+//        infoLabel.text = snek.info
         imageUIImage.image = UIImage(named: snek.imageName)
     }
 }

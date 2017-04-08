@@ -15,6 +15,7 @@
 		8CA7293E1E98A53800F19329 /* Snek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA7293D1E98A53800F19329 /* Snek.swift */; };
 		8CA729421E98AE7700F19329 /* SnekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA729411E98AE7700F19329 /* SnekCell.swift */; };
 		8CA729441E98C47E00F19329 /* SnekDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA729431E98C47E00F19329 /* SnekDetailVC.swift */; };
+		8CA729471E98CA5800F19329 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA729461E98CA5800F19329 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8CA7293D1E98A53800F19329 /* Snek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snek.swift; sourceTree = "<group>"; };
 		8CA729411E98AE7700F19329 /* SnekCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnekCell.swift; path = ../SnekCell.swift; sourceTree = "<group>"; };
 		8CA729431E98C47E00F19329 /* SnekDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnekDetailVC.swift; sourceTree = "<group>"; };
+		8CA729461E98CA5800F19329 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8CA7293B1E98A48600F19329 /* Model */,
 				8CA729391E98A47300F19329 /* View */,
 				8CA7293A1E98A47E00F19329 /* Controller */,
+				8CA729451E98CA4800F19329 /* Utilities */,
 				8CA7293C1E98A48E00F19329 /* Resources */,
 			);
 			path = JustSnakeThings;
@@ -103,6 +106,14 @@
 				8CA729331E98A3C700F19329 /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		8CA729451E98CA4800F19329 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8CA729461E98CA5800F19329 /* Constants.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				8CA7293E1E98A53800F19329 /* Snek.swift in Sources */,
 				8CA729281E98A3C700F19329 /* AppDelegate.swift in Sources */,
 				8CA729441E98C47E00F19329 /* SnekDetailVC.swift in Sources */,
+				8CA729471E98CA5800F19329 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

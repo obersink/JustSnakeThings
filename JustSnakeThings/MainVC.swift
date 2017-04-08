@@ -21,7 +21,13 @@ class MainVC: UIViewController {
         tableView.reloadData()
     }
     
-    //onsomething pressed
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == SEGUE_SegueToSnekDetailVC {
+            guard let snekDetailVC = segue.destination as? SnekDetailVC else { return }
+            guard let snek = sender as? Snek else { return }
+            snekDetailVC.snek = snek
+        }
+    }
     
 }
 
@@ -37,5 +43,9 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         return SnekCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: SEGUE_SegueToSnekDetailVC, sender: sneks[indexPath.row])
     }
 }
