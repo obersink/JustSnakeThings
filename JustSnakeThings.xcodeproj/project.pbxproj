@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		8CA729281E98A3C700F19329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA729271E98A3C700F19329 /* AppDelegate.swift */; };
-		8CA7292A1E98A3C700F19329 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA729291E98A3C700F19329 /* ViewController.swift */; };
+		8CA7292A1E98A3C700F19329 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA729291E98A3C700F19329 /* MainVC.swift */; };
 		8CA7292D1E98A3C700F19329 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA7292B1E98A3C700F19329 /* Main.storyboard */; };
 		8CA7292F1E98A3C700F19329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA7292E1E98A3C700F19329 /* Assets.xcassets */; };
 		8CA729321E98A3C700F19329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA729301E98A3C700F19329 /* LaunchScreen.storyboard */; };
-		8CA7293E1E98A53800F19329 /* SnekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA7293D1E98A53800F19329 /* SnekCell.swift */; };
+		8CA7293E1E98A53800F19329 /* Snek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA7293D1E98A53800F19329 /* Snek.swift */; };
+		8CA729421E98AE7700F19329 /* SnekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA729411E98AE7700F19329 /* SnekCell.swift */; };
+		8CA729441E98C47E00F19329 /* SnekDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA729431E98C47E00F19329 /* SnekDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8CA729241E98A3C700F19329 /* JustSnakeThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustSnakeThings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA729271E98A3C700F19329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CA729291E98A3C700F19329 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CA729291E98A3C700F19329 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		8CA7292C1E98A3C700F19329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CA7292E1E98A3C700F19329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CA729311E98A3C700F19329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CA729331E98A3C700F19329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CA7293D1E98A53800F19329 /* SnekCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnekCell.swift; sourceTree = "<group>"; };
+		8CA7293D1E98A53800F19329 /* Snek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snek.swift; sourceTree = "<group>"; };
+		8CA729411E98AE7700F19329 /* SnekCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnekCell.swift; path = ../SnekCell.swift; sourceTree = "<group>"; };
+		8CA729431E98C47E00F19329 /* SnekDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnekDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,10 @@
 		8CA729261E98A3C700F19329 /* JustSnakeThings */ = {
 			isa = PBXGroup;
 			children = (
-				8CA7293C1E98A48E00F19329 /* Resources */,
 				8CA7293B1E98A48600F19329 /* Model */,
-				8CA7293A1E98A47E00F19329 /* Controller */,
 				8CA729391E98A47300F19329 /* View */,
+				8CA7293A1E98A47E00F19329 /* Controller */,
+				8CA7293C1E98A48E00F19329 /* Resources */,
 			);
 			path = JustSnakeThings;
 			sourceTree = "<group>";
@@ -69,6 +73,7 @@
 			children = (
 				8CA7292B1E98A3C700F19329 /* Main.storyboard */,
 				8CA729301E98A3C700F19329 /* LaunchScreen.storyboard */,
+				8CA729411E98AE7700F19329 /* SnekCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -77,7 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				8CA729271E98A3C700F19329 /* AppDelegate.swift */,
-				8CA729291E98A3C700F19329 /* ViewController.swift */,
+				8CA729291E98A3C700F19329 /* MainVC.swift */,
+				8CA729431E98C47E00F19329 /* SnekDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -85,7 +91,7 @@
 		8CA7293B1E98A48600F19329 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8CA7293D1E98A53800F19329 /* SnekCell.swift */,
+				8CA7293D1E98A53800F19329 /* Snek.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -172,9 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CA7292A1E98A3C700F19329 /* ViewController.swift in Sources */,
-				8CA7293E1E98A53800F19329 /* SnekCell.swift in Sources */,
+				8CA7292A1E98A3C700F19329 /* MainVC.swift in Sources */,
+				8CA729421E98AE7700F19329 /* SnekCell.swift in Sources */,
+				8CA7293E1E98A53800F19329 /* Snek.swift in Sources */,
 				8CA729281E98A3C700F19329 /* AppDelegate.swift in Sources */,
+				8CA729441E98C47E00F19329 /* SnekDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +348,7 @@
 				8CA729381E98A3C700F19329 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
