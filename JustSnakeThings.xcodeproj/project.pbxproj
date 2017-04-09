@@ -27,7 +27,7 @@
 		8CA729311E98A3C700F19329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CA729331E98A3C700F19329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CA7293D1E98A53800F19329 /* Snek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snek.swift; sourceTree = "<group>"; };
-		8CA729411E98AE7700F19329 /* SnekCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnekCell.swift; path = ../SnekCell.swift; sourceTree = "<group>"; };
+		8CA729411E98AE7700F19329 /* SnekCell.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = SnekCell.swift; sourceTree = "<group>"; };
 		8CA729431E98C47E00F19329 /* SnekDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnekDetailVC.swift; sourceTree = "<group>"; };
 		8CA729461E98CA5800F19329 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
